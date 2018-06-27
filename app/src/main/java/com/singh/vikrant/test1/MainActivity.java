@@ -1,116 +1,49 @@
 package com.singh.vikrant.test1;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.support.v7.widget.Toolbar;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.singh.vikrant.test1.Fragmets.Fragment_Adapter;
 
 public class MainActivity extends AppCompatActivity {
 
-        private RecyclerView mList;
-        private LinearLayoutManager linearLayoutManager;
-        private List<Anime_Model> animeList;
-        private RecyclerView.Adapter adapter;
-        private TextView mErrorMessageDisplay;
-        private AnimeAdapter mAnimeAdapter;
-        private ProgressBar mLoadingIndicator;
-        private String url="https://api.themoviedb.org/3/movie/popular?api_key=6256134f8d005821fcb0ca17a719cd85";
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-                super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_main);
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-                mList = (RecyclerView) findViewById(R.id.rv_numbers);
-                animeList=new ArrayList<>();
-                mErrorMessageDisplay = (TextView) findViewById(R.id.tv_error_message_display);
-                 linearLayoutManager=new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-                mLoadingIndicator = (ProgressBar) findViewById(R.id.pb_loading_indicator);
+        setContentView(R.layout.activity_main);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        // Sets the Toolbar to act as the ActionBar for this Activity window.
+        // Make sure the toolbar exists in the activity and is not null
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("MOVIE");
 
 
-                getData();
-        }
+        // Find the view pager that will allow the user to swipe between fragments
+        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
 
-        private void getData() {
-                final ProgressDialog progressDialog = new ProgressDialog(this);
-                progressDialog.setMessage("Loading...");
-                progressDialog.show();
+        // Create an adapter that knows which fragment should be shown on each page
+        Fragment_Adapter adapter = new Fragment_Adapter(this, getSupportFragmentManager());
 
-                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
 
-                        url,null, new Response.Listener<JSONObject>() {
+        // Find the tab layout that shows the tabs
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
 
-                        @Override
-                        public void onResponse(JSONObject response) {
-                                JSONArray jsonAnimeArray=null;
-                                try {
-                                        jsonAnimeArray=response.getJSONArray(Constants.JSON_LIST);
-                                    for (int i = 0; i < jsonAnimeArray.length(); i++) {
+        // Connect the tab layout with the view pager. This will
+        //   1. Update the tab layout when the view pager is swiped
+        //   2. Update the view pager when a tab is selected
+        //   3. Set the tab layout's tab names with the view pager's adapter's titles
+        //      by calling onPageTitle()
+        tabLayout.setupWithViewPager(viewPager);
 
-                                            JSONObject jsonObject = jsonAnimeArray.getJSONObject(i);
-                                            Anime_Model anime = new Anime_Model();
-                                            anime.setId(jsonObject.getString(Constants.JSON_ID));
-                                            anime.setTitle(jsonObject.getString(Constants.JSON_TITLE));
-                                            anime.setReleaseDate(jsonObject.getString(Constants.JSON_RELEASE_DATE));
-                                            anime.setVoteAverage(jsonObject.getString(Constants.JSON_VOTE_AVERAGE));
-                                            anime.setOverview(jsonObject.getString(Constants.JSON_OVERVIEW));
-                                            anime.setImage_url(jsonObject.getString(Constants.JSON_POSTER_PATH));
-//                                                Uri posterUri = createPosterUri(jsonAnimeArray.getJSONObject(i).getString
-//                                                        (Constants.JSON_POSTER_PATH));
-
-                                            animeList.add(anime);
-
-                                    }
-
-                                } catch (JSONException e) {
-                                        e.printStackTrace();
-                                        progressDialog.dismiss();
-                                }
-
-                            Toast.makeText(MainActivity.this,"Size of Liste "+String.valueOf(animeList.size()),Toast.LENGTH_SHORT).show();
-                            Toast.makeText(MainActivity.this,animeList.get(1).toString(),Toast.LENGTH_SHORT).show();
-                                setAnimeadapter(animeList);
-//                                adapter.notifyDataSetChanged();
- //                               progressDialog.dismiss();
-                        }
-                }, new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                                Log.e("Volley", error.toString());
-                                progressDialog.dismiss();
-                        }
-                });
-                RequestQueue requestQueue = Volley.newRequestQueue(this);
-                requestQueue.add(jsonObjectRequest);
-        }
-
-        public void setAnimeadapter (List<Anime_Model> lst) {
-
-                mList.setLayoutManager(linearLayoutManager);
-                mList.setHasFixedSize(true);
-
-                mAnimeAdapter = new AnimeAdapter(this,lst);
-
-                mList.setAdapter(mAnimeAdapter);
-
-
-        }
-}
+        int limit = (adapter.getCount() > 1 ? adapter.getCount() - 1 : 1);
+        viewPager.setOffscreenPageLimit(limit);
+    }
+    }
