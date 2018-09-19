@@ -48,7 +48,11 @@ public class ListWallpaper extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_wallpaper);
+<<<<<<< HEAD
         Log.v("category id 2 ",Common.CATEGORY_ID_SELECTED);
+=======
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
         Toolbar toolbar=(Toolbar) findViewById(R.id.list_toolbar);
         toolbar.setTitle(Common.CATEGORY_SELECTED);
             setSupportActionBar(toolbar);
@@ -81,6 +85,10 @@ public class ListWallpaper extends AppCompatActivity{
             protected void onBindViewHolder(@NonNull final ListWallpaperViewHolder holder
                     , int position, @NonNull final WallpaperItem model) {
 
+<<<<<<< HEAD
+=======
+                //Log.e("bind ",model.getImageUrl()+" "+model.categoryId);
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 
                 Glide.with(getApplicationContext())
                         .load(model.getImageUrl())
@@ -93,6 +101,7 @@ public class ListWallpaper extends AppCompatActivity{
                         Log.e("Reached"," yes");
                         Intent intent=new Intent(getApplicationContext(), ViewWallpaper.class);
                         Common.select_background=model;
+<<<<<<< HEAD
 
                         Log.e("bind ",model.getImageUrl()+" "+model.getImagePath());
                         //intent.putExtra("id",model.getCategoryId());
@@ -103,6 +112,22 @@ public class ListWallpaper extends AppCompatActivity{
                 });
             }
 
+=======
+                        startActivity(intent);
+
+
+
+//                        Intent i = new Intent(getApplicationContext(), FullScreenViewActivity.class);
+//                        Common.select_background=model;
+//                        i.putExtra("position", position);
+//                        startActivity(i);
+                    }
+                });
+
+            }
+
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
             @Override
             public ListWallpaperViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
                 View itemView = LayoutInflater.from(parent.getContext())
@@ -118,6 +143,27 @@ public class ListWallpaper extends AppCompatActivity{
 
     }
 
+<<<<<<< HEAD
+=======
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        if (adapter!=null){
+//            adapter.startListening();
+//        }
+//    }
+//
+
+
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        if (adapter!=null){
+//            adapter.stopListening();
+//        }
+//    }
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
     @Override
     protected void onResume() {
         super.onResume();

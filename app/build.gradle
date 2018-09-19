@@ -76,6 +76,7 @@ dependencies {
     implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
     implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 
+<<<<<<< HEAD
 
 
      implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
@@ -83,6 +84,9 @@ dependencies {
 
 }
 configurations.all { resolutionStrategy.force 'android.arch.persistence.room:runtime:1.0.0' }
+=======
+}
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 apply plugin: 'com.google.gms.google-services'
 repositories {
     mavenCentral()

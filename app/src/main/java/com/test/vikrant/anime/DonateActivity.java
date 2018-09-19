@@ -29,7 +29,11 @@ public class DonateActivity extends Fragment {
      * PayPal
      */
     private static final String PAYPAL_USER = "singh121officialvikrant@gmail.com";
+<<<<<<< HEAD
     //private static final String PAYPAL_CURRENCY_CODE = "USD";
+=======
+    private static final String PAYPAL_CURRENCY_CODE = "USD";
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 
     /**
      * Bitcoin
@@ -62,7 +66,11 @@ public class DonateActivity extends Fragment {
                     null, false, null, null, false, null);
         } else {
             donationsFragment = DonationsFragment.newInstance(BuildConfig.DEBUG, false, null, null, null, true, PAYPAL_USER,
+<<<<<<< HEAD
                     "", "paypal", false, null, null, true, BITCOIN_ADDRESS);
+=======
+                    PAYPAL_CURRENCY_CODE, "paypal", false, null, null, true, BITCOIN_ADDRESS);
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
         }
 
         ft.replace(R.id.container_donate, donationsFragment, "donationsFragment");

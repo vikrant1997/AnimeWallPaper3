@@ -12,7 +12,11 @@ import android.support.v7.widget.Toolbar;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
+<<<<<<< HEAD
 import com.facebook.stetho.Stetho;
+=======
+//import com.facebook.stetho.Stetho;
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 
 
 public class MainActivity extends AppCompatActivity {
@@ -23,12 +27,15 @@ public class MainActivity extends AppCompatActivity {
             Analytics.class, Crashes.class);
     AppCenter.start(getApplication(), "4eb56640-ee14-4e52-bc77-ae448422c6f6", Analytics.class, Crashes.class);
 
+<<<<<<< HEAD
             Stetho.InitializerBuilder initializerBuilder = Stetho.newInitializerBuilder(this);
         initializerBuilder.enableWebKitInspector( Stetho.defaultInspectorModulesProvider(this) );
         initializerBuilder.enableDumpapp( Stetho.defaultDumperPluginsProvider(getApplicationContext()) );
         Stetho.Initializer initializer = initializerBuilder.build();
         Stetho.initialize(initializer);
 
+=======
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
     setContentView(R.layout.activity_main);
 
     new Handler().postDelayed(new Runnable() {
