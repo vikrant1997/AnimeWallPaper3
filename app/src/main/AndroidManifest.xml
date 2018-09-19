@@ -1,45 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.singh.vikrant.test1">
+    package="com.test.vikrant.anime">
 
+    <uses-permission android:name="com.android.vending.BILLING" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE"
         tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="andorid.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="FasAnime"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|screenSize">
+            android:alwaysRetainTaskState="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailsActivity"
-            android:label="Details"
-            android:launchMode="singleTop">
-            <!--android:parentActivityName="com.singh.vikrant.test1.MainActivity"-->
-
+        <activity
+            android:name=".MainActivity2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:alwaysRetainTaskState="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <!--<meta-data-->
-                <!--android:name="android.support.PARENT_ACTIVITY"></meta-data>-->
-
-                <!--android:value="com.singh.vikrant.test1.MainActivity" />-->
         </activity>
+        <activity
+            android:alwaysRetainTaskState="true"
+            android:name=".ListWallpaper"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity2">
+
+        </activity>
+        <activity
+            android:alwaysRetainTaskState="true"
+            android:name=".ViewWallpaper"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ListWallpaper" />
     </application>
 
 </manifest>
