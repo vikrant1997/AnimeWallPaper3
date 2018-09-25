@@ -143,6 +143,7 @@ public class Bottom_List_Category extends Fragment {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     @Override
     public void onStart() {
         super.onStart();
@@ -167,6 +168,8 @@ public class Bottom_List_Category extends Fragment {
         }
     }
 =======
+=======
+>>>>>>> master
 //    @Override
 //    public void onStart() {
 //        super.onStart();
@@ -190,5 +193,8 @@ public class Bottom_List_Category extends Fragment {
 //            adapter.startListening();
 //        }
 //    }
+<<<<<<< HEAD
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 }

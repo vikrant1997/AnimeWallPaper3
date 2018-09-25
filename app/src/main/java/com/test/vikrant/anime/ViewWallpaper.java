@@ -7,8 +7,11 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 import android.graphics.drawable.Icon;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -18,6 +21,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 import android.support.annotation.NonNull;
@@ -31,10 +35,13 @@ import android.support.v7.widget.Toolbar;
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 import android.widget.Toast;
@@ -43,6 +50,9 @@ import android.widget.Toast;
 =======
 import android.widget.Toast;
 >>>>>>> PaypalAdded
+=======
+import android.widget.Toast;
+>>>>>>> master
 
 
 import com.bumptech.glide.Glide;
@@ -53,6 +63,7 @@ import com.github.clans.fab.FloatingActionMenu;
 import com.test.vikrant.anime.Common.Common;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.test.vikrant.anime.database.Anime_Model;
 import com.test.vikrant.anime.database.AppDatabase;
 import com.test.vikrant.anime.database.AppExecutors;
@@ -63,14 +74,22 @@ import com.test.vikrant.anime.database.Anime_Model;
 import com.test.vikrant.anime.database.AppDatabase;
 import com.test.vikrant.anime.database.AppExecutors;
 >>>>>>> PaypalAdded
+=======
+import com.test.vikrant.anime.database.Anime_Model;
+import com.test.vikrant.anime.database.AppDatabase;
+import com.test.vikrant.anime.database.AppExecutors;
+>>>>>>> master
 
 
 import java.io.IOException;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 import static com.google.android.gms.common.internal.safeparcel.SafeParcelable.NULL;
 
 public class ViewWallpaper extends AppCompatActivity {
@@ -80,16 +99,20 @@ public class ViewWallpaper extends AppCompatActivity {
     private String image_uri;
     private boolean flag=false;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 public class ViewWallpaper extends AppCompatActivity {
 
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
     RequestOptions glideOptions = new RequestOptions()
             .placeholder(R.drawable.ic_launcher_foreground)
             .error(R.drawable.ic_launcher_foreground);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -97,6 +120,8 @@ public class ViewWallpaper extends AppCompatActivity {
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
     FloatingActionMenu mainFloating;
 
     com.github.clans.fab.FloatingActionButton wall_set;
@@ -104,6 +129,7 @@ public class ViewWallpaper extends AppCompatActivity {
     RelativeLayout rootLayout;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Icon heartImage;
     Drawable drawable;
     private Menu testMenu;
@@ -116,6 +142,11 @@ public class ViewWallpaper extends AppCompatActivity {
     Drawable drawable;
     private Menu testMenu;
 >>>>>>> PaypalAdded
+=======
+    Icon heartImage;
+    Drawable drawable;
+    private Menu testMenu;
+>>>>>>> master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -125,8 +156,11 @@ public class ViewWallpaper extends AppCompatActivity {
         setSupportActionBar(toolbar);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 
         Intent fetch=getIntent();
         image_path=fetch.getStringExtra("imageId");
@@ -136,10 +170,13 @@ public class ViewWallpaper extends AppCompatActivity {
 
         //checkHeart(image_path);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             //Init
@@ -150,12 +187,16 @@ public class ViewWallpaper extends AppCompatActivity {
                     .into(imageView);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
             Log.d("ViewWallpaper reacehed ","reached ");
             mainFloating = (FloatingActionMenu) findViewById(R.id.fab);
             wall_set = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.fab_wall);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -164,6 +205,8 @@ public class ViewWallpaper extends AppCompatActivity {
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
             wall_set.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -194,8 +237,11 @@ public class ViewWallpaper extends AppCompatActivity {
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -280,6 +326,7 @@ public void deleteById(final String mImagePath){
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -299,5 +346,7 @@ public void deleteById(final String mImagePath){
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 }
 

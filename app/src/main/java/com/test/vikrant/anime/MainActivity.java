@@ -14,6 +14,7 @@ import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.facebook.stetho.Stetho;
 =======
 //import com.facebook.stetho.Stetho;
@@ -21,6 +22,9 @@ import com.facebook.stetho.Stetho;
 =======
 import com.facebook.stetho.Stetho;
 >>>>>>> PaypalAdded
+=======
+import com.facebook.stetho.Stetho;
+>>>>>>> master
 
 
 public class MainActivity extends AppCompatActivity {
@@ -33,8 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
             Stetho.InitializerBuilder initializerBuilder = Stetho.newInitializerBuilder(this);
         initializerBuilder.enableWebKitInspector( Stetho.defaultInspectorModulesProvider(this) );
         initializerBuilder.enableDumpapp( Stetho.defaultDumperPluginsProvider(getApplicationContext()) );
@@ -42,10 +49,13 @@ public class MainActivity extends AppCompatActivity {
         Stetho.initialize(initializer);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
     setContentView(R.layout.activity_main);
 
     new Handler().postDelayed(new Runnable() {

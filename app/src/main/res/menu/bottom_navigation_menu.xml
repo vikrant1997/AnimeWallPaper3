@@ -5,6 +5,7 @@
         android:id="@+id/action_home"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:icon="@drawable/ic_home_black_24dp"
         android:title="Home">
 =======
@@ -15,11 +16,16 @@
         android:icon="@drawable/ic_home_black_24dp"
         android:title="Home">
 >>>>>>> PaypalAdded
+=======
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home">
+>>>>>>> master
 
     </item>
 
     <item
         android:id="@+id/action_list"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         android:icon="@drawable/ic_view_list_black_24dp"
@@ -29,11 +35,15 @@
 =======
         android:icon="@drawable/ic_view_list_black_24dp"
 >>>>>>> PaypalAdded
+=======
+        android:icon="@drawable/ic_view_list_black_24dp"
+>>>>>>> master
         android:title="Explore">
 
     </item>
     <item
         android:id="@+id/action_donate"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         android:icon="@drawable/ic_donate"
@@ -46,6 +56,10 @@
         android:icon="@drawable/ic_donate"
         android:title="Support">
 >>>>>>> PaypalAdded
+=======
+        android:icon="@drawable/ic_donate"
+        android:title="Support">
+>>>>>>> master
 
     </item>
 

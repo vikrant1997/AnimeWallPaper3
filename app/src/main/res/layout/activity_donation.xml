@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <android.widget.LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -9,6 +10,8 @@
 
 </android.widget.LinearLayout>
 =======
+=======
+>>>>>>> master
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -71,5 +74,9 @@
         </LinearLayout>
     </LinearLayout>
 
+<<<<<<< HEAD
 </LinearLayout>
 >>>>>>> PaypalAdded
+=======
+</LinearLayout>
+>>>>>>> master

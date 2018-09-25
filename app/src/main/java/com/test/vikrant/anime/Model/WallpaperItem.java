@@ -5,12 +5,16 @@ import java.io.InputStream;
 public class WallpaperItem {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 
     private String imagePath;
     private String imageUrl;
     private String categoryId;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     public String imageUrl;
@@ -18,14 +22,19 @@ public class WallpaperItem {
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 
     public WallpaperItem(){
 
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
     public WallpaperItem(String imageUrl,String imagePath){
 
         this.imagePath=imagePath;
@@ -58,6 +67,7 @@ public class WallpaperItem {
 //    }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
     public WallpaperItem(String imageLink, String categoryId) {
@@ -68,14 +78,19 @@ public class WallpaperItem {
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
     public String getImageUrl() {
         return imageUrl;
     }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 //    public void setCategoryId(String categoryId) {
 //        this.categoryId = categoryId;
 //    }
@@ -86,6 +101,7 @@ public class WallpaperItem {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     public void setImageUrl(String imageLink) {
@@ -101,5 +117,7 @@ public class WallpaperItem {
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
     }
 }

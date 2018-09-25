@@ -1,20 +1,27 @@
 package com.test.vikrant.anime;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 =======
+=======
+>>>>>>> master
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.TabLayout;
+<<<<<<< HEAD
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+<<<<<<< HEAD
 <<<<<<< HEAD
 import android.support.v7.widget.GridLayoutManager;
 import android.view.LayoutInflater;
@@ -55,6 +62,8 @@ public class DonateActivity extends Fragment {
      */
 
 =======
+=======
+>>>>>>> master
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.Toolbar;
@@ -99,11 +108,15 @@ public class DonateActivity extends Fragment {
     Button btnPayNow;
     EditText editAmount;
     String amount="";
+<<<<<<< HEAD
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
     @Override
     public void onCreate(Bundle savedInstanceState) {
         setRetainInstance(true);
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     }
@@ -113,10 +126,15 @@ public class DonateActivity extends Fragment {
     }
 
 >>>>>>> PaypalAdded
+=======
+    }
+
+>>>>>>> master
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         View view = inflater.inflate(R.layout.activity_donation, container, false);
 
@@ -141,6 +159,8 @@ public class DonateActivity extends Fragment {
     }
 
 =======
+=======
+>>>>>>> master
         view = inflater.inflate(R.layout.activity_donation, container, false);
 
         Intent intent=new Intent(getActivity(),PayPalService.class);
@@ -169,13 +189,17 @@ public class DonateActivity extends Fragment {
         intent.putExtra(PaymentActivity.EXTRA_PAYMENT,payPalPayment);
         startActivityForResult(intent,PAYPAL_REQUEST_CODE);
     }
+<<<<<<< HEAD
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
     public static Fragment getINSTANCE(){
         if(INSTANCE==null)
             INSTANCE=new DonateActivity();
         return INSTANCE;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Needed for Google Play In-app Billing. It uses startIntentSenderForResult(). The result is not propagated to
@@ -193,6 +217,8 @@ public class DonateActivity extends Fragment {
     }
 
 =======
+=======
+>>>>>>> master
     @Override
     public void onDestroyView() {
         getActivity().stopService(new Intent(getActivity(),PayPalService.class));
@@ -227,5 +253,8 @@ public class DonateActivity extends Fragment {
         }else if (resultCode==PaymentActivity.RESULT_EXTRAS_INVALID)
             Toast.makeText(getActivity(),"Invalid",Toast.LENGTH_SHORT).show();
     }
+<<<<<<< HEAD
 >>>>>>> PaypalAdded
+=======
+>>>>>>> master
 }

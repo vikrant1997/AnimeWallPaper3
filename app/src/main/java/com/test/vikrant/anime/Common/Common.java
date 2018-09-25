@@ -11,11 +11,15 @@ public class Common {
     public static String CATEGORY_ID_SELECTED;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static String IMAGE_PATH;
 =======
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
 =======
     public static String IMAGE_PATH;
 >>>>>>> PaypalAdded
+=======
+    public static String IMAGE_PATH;
+>>>>>>> master
     public static WallpaperItem select_background=new WallpaperItem();
 }
