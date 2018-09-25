@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.test.vikrant.anime">
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="andorid.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FasAnime"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+<<<<<<< HEAD
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+=======
+<<<<<<< HEAD
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:alwaysRetainTaskState="true">
+=======
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+>>>>>>> PaypalAdded
+=======
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
+>>>>>>> 72bd011ebb4a4623bfc8da1e31bbf48cacb1a02b
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 72bd011ebb4a4623bfc8da1e31bbf48cacb1a02b
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+<<<<<<< HEAD
+        </activity>
+        <activity
+=======
+        </activity>
+        <activity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:alwaysRetainTaskState="true"
+            android:name=".ListWallpaper"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity2">
+
+        </activity>
+        <activity
+            android:alwaysRetainTaskState="true"
+            android:name=".ViewWallpaper"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ListWallpaper" />
+=======
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+=======
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
+>>>>>>> 72bd011ebb4a4623bfc8da1e31bbf48cacb1a02b
+            android:name=".ListWallpaper"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity2"></activity>
+        <activity
+            android:name=".ViewWallpaper"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ListWallpaper" />
+        <activity android:name=".config.PaymentDetails"></activity>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
+>>>>>>> 72bd011ebb4a4623bfc8da1e31bbf48cacb1a02b
+    </application>
+
+</manifest>

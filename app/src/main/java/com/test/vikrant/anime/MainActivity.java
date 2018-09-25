@@ -1,81 +1,50 @@
-package com.test.vikrant.anime;
+package com.singh.vikrant.photos;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.microsoft.appcenter.AppCenter;
-import com.microsoft.appcenter.analytics.Analytics;
-import com.microsoft.appcenter.crashes.Crashes;
-<<<<<<< HEAD
-import com.facebook.stetho.Stetho;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-import com.facebook.stetho.Stetho;
-=======
 //import com.facebook.stetho.Stetho;
->>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
-=======
-import com.facebook.stetho.Stetho;
->>>>>>> PaypalAdded
-=======
-import com.facebook.stetho.Stetho;
->>>>>>> master
->>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
-
+import com.singh.vikrant.photos.Fragmets.Fragment_Adapter;
 
 public class MainActivity extends AppCompatActivity {
-@Override
-    protected void onCreate(Bundle savedInstanceState){
-    super.onCreate(savedInstanceState);
-    AppCenter.start(getApplication(), "4eb56640-ee14-4e52-bc77-ae448422c6f6",
-            Analytics.class, Crashes.class);
-    AppCenter.start(getApplication(), "4eb56640-ee14-4e52-bc77-ae448422c6f6", Analytics.class, Crashes.class);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> PaypalAdded
-=======
->>>>>>> master
->>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
-            Stetho.InitializerBuilder initializerBuilder = Stetho.newInitializerBuilder(this);
-        initializerBuilder.enableWebKitInspector( Stetho.defaultInspectorModulesProvider(this) );
-        initializerBuilder.enableDumpapp( Stetho.defaultDumperPluginsProvider(getApplicationContext()) );
-        Stetho.Initializer initializer = initializerBuilder.build();
-        Stetho.initialize(initializer);
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+//
+//        Stetho.InitializerBuilder initializerBuilder = Stetho.newInitializerBuilder(this);
+//        initializerBuilder.enableWebKitInspector( Stetho.defaultInspectorModulesProvider(this) );
+//        initializerBuilder.enableDumpapp( Stetho.defaultDumperPluginsProvider(getApplicationContext()) );
+//        Stetho.Initializer initializer = initializerBuilder.build();
+//        Stetho.initialize(initializer);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
-=======
->>>>>>> PaypalAdded
-=======
->>>>>>> master
->>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
-    setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
-    new Handler().postDelayed(new Runnable() {
-        @Override
-        public void run( ){
-            Intent intent=new Intent(MainActivity.this,MainActivity2.class);
-            startActivity(intent);
-            finish();}
-        },1000);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-}
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("MOVIE");
+
+
+        // Find the view pager that will allow the user to swipe between fragments
+        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+
+        // Create an adapter that knows which fragment should be shown on each page
+        Fragment_Adapter adapter = new Fragment_Adapter(this, getSupportFragmentManager());
+
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
+
+        // Find the tab layout that shows the tabs
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+
+        tabLayout.setupWithViewPager(viewPager);
+        // int limit = (adapter.getCount() > 1 ? adapter.getCount() - 1 : 1);
+        viewPager.setOffscreenPageLimit(2);
     }
 
+    }

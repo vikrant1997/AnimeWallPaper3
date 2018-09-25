@@ -1,4 +1,4 @@
-package com.test.vikrant.anime;
+package com.singh.vikrant.photos;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

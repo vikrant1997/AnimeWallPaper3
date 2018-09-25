@@ -16,7 +16,6 @@
             android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             />
         <TextView
             android:id="@+id/name"
@@ -26,9 +25,7 @@
             android:layout_alignParentBottom="true"
             android:text="Category name"
             android:textSize="15sp"
-            android:textColor="#FFF"
-            android:background="#30000000"
-
+            android:textColor="@android:color/white"
             />
 
     </RelativeLayout>

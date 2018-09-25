@@ -1,4 +1,4 @@
-package com.test.vikrant.anime;
+package com.singh.vikrant.photos;
 
 import org.junit.Test;
 

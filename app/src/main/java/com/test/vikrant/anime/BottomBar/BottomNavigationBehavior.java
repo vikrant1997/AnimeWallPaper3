@@ -1,4 +1,4 @@
-package com.test.vikrant.anime.BottomBar;
+package com.test.vikrant.anime;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -12,8 +12,6 @@ public final class BottomNavigationBehavior extends CoordinatorLayout.Behavior<B
     public BottomNavigationBehavior(@NonNull Context context, @NonNull AttributeSet attrs) {
         super(context, attrs);
     }
-
-   
 
     public boolean onStartNestedScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull BottomNavigationView child, @NonNull View directTargetChild, @NonNull View target, int axes, int type) {
         return axes == ViewCompat.SCROLL_AXIS_VERTICAL;
