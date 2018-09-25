@@ -4,27 +4,37 @@
     <item
         android:id="@+id/action_home"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:icon="@drawable/ic_home_black_24dp"
         android:title="Home">
 =======
         android:icon="@drawable/ic_event_note_black_24dp"
         android:title="News">
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home">
+>>>>>>> PaypalAdded
 
     </item>
 
     <item
         android:id="@+id/action_list"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:icon="@drawable/ic_view_list_black_24dp"
 =======
         android:icon="@drawable/ic_explore_black_24dp"
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+        android:icon="@drawable/ic_view_list_black_24dp"
+>>>>>>> PaypalAdded
         android:title="Explore">
 
     </item>
     <item
         android:id="@+id/action_donate"
+<<<<<<< HEAD
 <<<<<<< HEAD
         android:icon="@drawable/ic_donate"
         android:title="Support">
@@ -32,6 +42,10 @@
         android:icon="@drawable/ic_cloud_upload_black_24dp"
         android:title="Upload">
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+        android:icon="@drawable/ic_donate"
+        android:title="Support">
+>>>>>>> PaypalAdded
 
     </item>
 

@@ -49,10 +49,14 @@ public class ListWallpaper extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_wallpaper);
 <<<<<<< HEAD
+<<<<<<< HEAD
         Log.v("category id 2 ",Common.CATEGORY_ID_SELECTED);
 =======
 
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+        Log.v("category id 2 ",Common.CATEGORY_ID_SELECTED);
+>>>>>>> PaypalAdded
         Toolbar toolbar=(Toolbar) findViewById(R.id.list_toolbar);
         toolbar.setTitle(Common.CATEGORY_SELECTED);
             setSupportActionBar(toolbar);
@@ -86,9 +90,12 @@ public class ListWallpaper extends AppCompatActivity{
                     , int position, @NonNull final WallpaperItem model) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 //Log.e("bind ",model.getImageUrl()+" "+model.categoryId);
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
 
                 Glide.with(getApplicationContext())
                         .load(model.getImageUrl())
@@ -102,6 +109,9 @@ public class ListWallpaper extends AppCompatActivity{
                         Intent intent=new Intent(getApplicationContext(), ViewWallpaper.class);
                         Common.select_background=model;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> PaypalAdded
 
                         Log.e("bind ",model.getImageUrl()+" "+model.getImagePath());
                         //intent.putExtra("id",model.getCategoryId());
@@ -112,6 +122,7 @@ public class ListWallpaper extends AppCompatActivity{
                 });
             }
 
+<<<<<<< HEAD
 =======
                         startActivity(intent);
 
@@ -128,6 +139,8 @@ public class ListWallpaper extends AppCompatActivity{
 
 
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
             @Override
             public ListWallpaperViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
                 View itemView = LayoutInflater.from(parent.getContext())
@@ -143,6 +156,7 @@ public class ListWallpaper extends AppCompatActivity{
 
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 //    @Override
@@ -164,6 +178,8 @@ public class ListWallpaper extends AppCompatActivity{
 //    }
 
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
     @Override
     protected void onResume() {
         super.onResume();

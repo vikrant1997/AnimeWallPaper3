@@ -18,9 +18,13 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 import com.google.firebase.database.DataSnapshot;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.google.firebase.database.Query;
 =======
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+import com.google.firebase.database.Query;
+>>>>>>> PaypalAdded
 import com.google.firebase.database.ValueEventListener;
 import com.test.vikrant.anime.Common.Common;
 import com.google.firebase.database.DatabaseReference;
@@ -43,10 +47,14 @@ public class CategoryFragment extends Fragment {
     FirebaseDatabase database;
     DatabaseReference categoryBackground;
 <<<<<<< HEAD
+<<<<<<< HEAD
     Query query;
 =======
 
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+    Query query;
+>>>>>>> PaypalAdded
     //FirebaseUI Adapter
     FirebaseRecyclerOptions<CategoryItem> options;
     FirebaseRecyclerAdapter<CategoryItem,CategoryViewHolder> adapter;
@@ -61,22 +69,30 @@ public class CategoryFragment extends Fragment {
         database=FirebaseDatabase.getInstance();
         categoryBackground= database.getReference(Common.STR_CATEGORY_BACKGROUND);
 <<<<<<< HEAD
+<<<<<<< HEAD
        // query=categoryBackground.orderByChild("categoryId").equalTo(Common.CATEGORY_ID_SELECTED);
 =======
 
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+       // query=categoryBackground.orderByChild("categoryId").equalTo(Common.CATEGORY_ID_SELECTED);
+>>>>>>> PaypalAdded
         options=new FirebaseRecyclerOptions.Builder<CategoryItem>()
                 .setQuery(categoryBackground/*.orderByKey().startAt(String.valueOf(rand)).limitToFirst(5)*/,CategoryItem.class)
                 .build();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
         adapter=new FirebaseRecyclerAdapter<CategoryItem, CategoryViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull final CategoryViewHolder holder
                     , int position, @NonNull final CategoryItem model) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 //                Picasso.get()
@@ -107,6 +123,8 @@ public class CategoryFragment extends Fragment {
 //                            }
 //                        });
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
 
                 Glide.with(getActivity())
                         .load(model.getImageLink())
@@ -118,6 +136,7 @@ public class CategoryFragment extends Fragment {
                     @Override
                     public void onclick(View view, int position) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Common.CATEGORY_ID_SELECTED=adapter.getRef(position).getKey();
 
                         Common.CATEGORY_SELECTED=model.getName();
@@ -126,6 +145,11 @@ public class CategoryFragment extends Fragment {
                         Common.CATEGORY_SELECTED=model.getName();
 
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+                        Common.CATEGORY_ID_SELECTED=adapter.getRef(position).getKey();
+
+                        Common.CATEGORY_SELECTED=model.getName();
+>>>>>>> PaypalAdded
                         Intent intent=new Intent(getActivity(), ListWallpaper.class);
                         startActivity(intent);
                     }
@@ -140,12 +164,16 @@ public class CategoryFragment extends Fragment {
                 return new CategoryViewHolder(itemView);
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
         };
 =======
 
         };
 
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+        };
+>>>>>>> PaypalAdded
     }
 
     public static CategoryFragment getINSTANCE(){
@@ -165,9 +193,12 @@ public class CategoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Inflate the layout for this fragment
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
         View view = inflater.inflate(R.layout.fragment_category, container, false);
         recyclerView = view.findViewById(R.id.recycler_category);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 1);
@@ -181,6 +212,7 @@ private void setCategory(){
         recyclerView.setAdapter(adapter);
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 //    @Override
@@ -200,6 +232,8 @@ private void setCategory(){
 //    }
 
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
     @Override
     public void onResume() {
         super.onResume();

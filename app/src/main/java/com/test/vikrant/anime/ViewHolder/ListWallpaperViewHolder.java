@@ -24,10 +24,14 @@ public class ListWallpaperViewHolder extends RecyclerView.ViewHolder implements 
     public ListWallpaperViewHolder(View itemView) {
         super(itemView);
 <<<<<<< HEAD
+<<<<<<< HEAD
         wallpaper=(ImageView) itemView.findViewById(R.id.image_list);
 =======
     wallpaper=(ImageView) itemView.findViewById(R.id.image_list);
 >>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+        wallpaper=(ImageView) itemView.findViewById(R.id.image_list);
+>>>>>>> PaypalAdded
         itemView.setOnClickListener(this);
     }
 
