@@ -48,7 +48,23 @@ public class ListWallpaper extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_wallpaper);
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        Log.v("category id 2 ",Common.CATEGORY_ID_SELECTED);
+=======
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+        Log.v("category id 2 ",Common.CATEGORY_ID_SELECTED);
+>>>>>>> PaypalAdded
+=======
+        Log.v("category id 2 ",Common.CATEGORY_ID_SELECTED);
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
         Toolbar toolbar=(Toolbar) findViewById(R.id.list_toolbar);
         toolbar.setTitle(Common.CATEGORY_SELECTED);
             setSupportActionBar(toolbar);
@@ -74,13 +90,30 @@ public class ListWallpaper extends AppCompatActivity{
                 .build();
 
 
+<<<<<<< HEAD
 
+=======
+        Log.e("options ",options.toString());
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 
         adapter=new FirebaseRecyclerAdapter<WallpaperItem, ListWallpaperViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull final ListWallpaperViewHolder holder
                     , int position, @NonNull final WallpaperItem model) {
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                //Log.e("bind ",model.getImageUrl()+" "+model.categoryId);
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 
                 Glide.with(getApplicationContext())
                         .load(model.getImageUrl())
@@ -90,11 +123,26 @@ public class ListWallpaper extends AppCompatActivity{
 
                     @Override
                     public void onclick(View view, int position) {
+<<<<<<< HEAD
 
                         Intent intent=new Intent(getApplicationContext(), ViewWallpaper.class);
                         Common.select_background=model;
 
 
+=======
+                        Log.e("Reached"," yes");
+                        Intent intent=new Intent(getApplicationContext(), ViewWallpaper.class);
+                        Common.select_background=model;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+
+                        Log.e("bind ",model.getImageUrl()+" "+model.getImagePath());
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
                         //intent.putExtra("id",model.getCategoryId());
                         intent.putExtra("imageUri",model.getImageUrl());
                         intent.putExtra("imageId",model.getImagePath());
@@ -103,6 +151,31 @@ public class ListWallpaper extends AppCompatActivity{
                 });
             }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                        startActivity(intent);
+
+
+
+//                        Intent i = new Intent(getApplicationContext(), FullScreenViewActivity.class);
+//                        Common.select_background=model;
+//                        i.putExtra("position", position);
+//                        startActivity(i);
+                    }
+                });
+
+            }
+
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
             @Override
             public ListWallpaperViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
                 View itemView = LayoutInflater.from(parent.getContext())
@@ -118,6 +191,36 @@ public class ListWallpaper extends AppCompatActivity{
 
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        if (adapter!=null){
+//            adapter.startListening();
+//        }
+//    }
+//
+
+
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        if (adapter!=null){
+//            adapter.stopListening();
+//        }
+//    }
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
     @Override
     protected void onResume() {
         super.onResume();

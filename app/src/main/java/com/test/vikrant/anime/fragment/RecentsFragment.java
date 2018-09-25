@@ -1,6 +1,7 @@
 package com.test.vikrant.anime.fragment;
 
 
+<<<<<<< HEAD
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.Observer;
 import android.content.Context;
@@ -12,10 +13,15 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+=======
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+<<<<<<< HEAD
 import com.test.vikrant.anime.Adapter.BookMarksAdapter;
 import com.test.vikrant.anime.R;
 import com.test.vikrant.anime.ViewWallpaper;
@@ -38,6 +44,15 @@ public class RecentsFragment extends Fragment implements BookMarksAdapter.ListIt
     public void setRetainInstance(boolean retain) {
         super.setRetainInstance(retain);
     }
+=======
+import com.test.vikrant.anime.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class RecentsFragment extends Fragment {
+    private static RecentsFragment INSTANCE=null;
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 
     public RecentsFragment() {
         // Required empty public constructor
@@ -50,6 +65,7 @@ public class RecentsFragment extends Fragment implements BookMarksAdapter.ListIt
     }
 
     @Override
+<<<<<<< HEAD
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -85,10 +101,15 @@ public class RecentsFragment extends Fragment implements BookMarksAdapter.ListIt
                 mAnimeAdapter.setTasks(taskEntries);
             }
         });
+=======
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 
     }
 
     @Override
+<<<<<<< HEAD
     public void onListItemClick(int clickedItemIndex) {
         String msg=String.valueOf(clickedItemIndex);
         Anime_Model obj=animeList.get(clickedItemIndex);
@@ -114,4 +135,12 @@ public class RecentsFragment extends Fragment implements BookMarksAdapter.ListIt
         //startActivity(send);
 
     }
+=======
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_recents, container, false);
+    }
+
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 }

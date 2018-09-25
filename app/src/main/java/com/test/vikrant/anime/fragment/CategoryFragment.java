@@ -17,7 +17,22 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 import com.google.firebase.database.DataSnapshot;
+<<<<<<< HEAD
 import com.google.firebase.database.Query;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+import com.google.firebase.database.Query;
+=======
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+import com.google.firebase.database.Query;
+>>>>>>> PaypalAdded
+=======
+import com.google.firebase.database.Query;
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 import com.google.firebase.database.ValueEventListener;
 import com.test.vikrant.anime.Common.Common;
 import com.google.firebase.database.DatabaseReference;
@@ -39,7 +54,23 @@ public class CategoryFragment extends Fragment {
     //Firebase
     FirebaseDatabase database;
     DatabaseReference categoryBackground;
+<<<<<<< HEAD
     Query query;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    Query query;
+=======
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+    Query query;
+>>>>>>> PaypalAdded
+=======
+    Query query;
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
     //FirebaseUI Adapter
     FirebaseRecyclerOptions<CategoryItem> options;
     FirebaseRecyclerAdapter<CategoryItem,CategoryViewHolder> adapter;
@@ -53,15 +84,83 @@ public class CategoryFragment extends Fragment {
     public CategoryFragment() {
         database=FirebaseDatabase.getInstance();
         categoryBackground= database.getReference(Common.STR_CATEGORY_BACKGROUND);
+<<<<<<< HEAD
        // query=categoryBackground.orderByChild("categoryId").equalTo(Common.CATEGORY_ID_SELECTED);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+       // query=categoryBackground.orderByChild("categoryId").equalTo(Common.CATEGORY_ID_SELECTED);
+=======
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+       // query=categoryBackground.orderByChild("categoryId").equalTo(Common.CATEGORY_ID_SELECTED);
+>>>>>>> PaypalAdded
+=======
+       // query=categoryBackground.orderByChild("categoryId").equalTo(Common.CATEGORY_ID_SELECTED);
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
         options=new FirebaseRecyclerOptions.Builder<CategoryItem>()
                 .setQuery(categoryBackground/*.orderByKey().startAt(String.valueOf(rand)).limitToFirst(5)*/,CategoryItem.class)
                 .build();
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
         adapter=new FirebaseRecyclerAdapter<CategoryItem, CategoryViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull final CategoryViewHolder holder
                     , int position, @NonNull final CategoryItem model) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+//                Picasso.get()
+//                        .load(model.getImageLink())
+//                        .networkPolicy(NetworkPolicy.OFFLINE)
+//                        .into(holder.background_image, new Callback() {
+//                            @Override
+//                            public void onSuccess() {
+//
+//                            }
+//
+//                            @Override
+//                            public void onError(Exception e) {
+//                                Picasso.get()
+//                                        .load(model.getImageLink())
+//                                        .error(R.drawable.ic_launcher_foreground)
+//                                        .into(holder.background_image, new Callback() {
+//                                            @Override
+//                                            public void onSuccess() {
+//
+//                                            }
+//
+//                                            @Override
+//                                            public void onError(Exception e) {
+//                                                Log.e("ERROR_ANIME","Couldn't fetch image");
+//                                            }
+//                                        });
+//                            }
+//                        });
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 
                 Glide.with(getActivity())
                         .load(model.getImageLink())
@@ -72,9 +171,33 @@ public class CategoryFragment extends Fragment {
                 holder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onclick(View view, int position) {
+<<<<<<< HEAD
                         Common.CATEGORY_ID_SELECTED=adapter.getRef(position).getKey();
 
                         Common.CATEGORY_SELECTED=model.getName();
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        Common.CATEGORY_ID_SELECTED=adapter.getRef(position).getKey();
+
+                        Common.CATEGORY_SELECTED=model.getName();
+=======
+                        Common.CATEGORY_ID_SELECTED=adapter.getRef(position).getKey();  //get Key of item
+                        Common.CATEGORY_SELECTED=model.getName();
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+                        Common.CATEGORY_ID_SELECTED=adapter.getRef(position).getKey();
+
+                        Common.CATEGORY_SELECTED=model.getName();
+>>>>>>> PaypalAdded
+=======
+                        Common.CATEGORY_ID_SELECTED=adapter.getRef(position).getKey();
+
+                        Common.CATEGORY_SELECTED=model.getName();
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
                         Intent intent=new Intent(getActivity(), ListWallpaper.class);
                         startActivity(intent);
                     }
@@ -88,7 +211,25 @@ public class CategoryFragment extends Fragment {
                         .inflate(R.layout.layout_category_item,parent,false);
                 return new CategoryViewHolder(itemView);
             }
+<<<<<<< HEAD
         };
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        };
+=======
+
+        };
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+        };
+>>>>>>> PaypalAdded
+=======
+        };
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
     }
 
     public static CategoryFragment getINSTANCE(){
@@ -107,6 +248,19 @@ public class CategoryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        // Inflate the layout for this fragment
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
         View view = inflater.inflate(R.layout.fragment_category, container, false);
         recyclerView = view.findViewById(R.id.recycler_category);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 1);
@@ -120,6 +274,34 @@ private void setCategory(){
         recyclerView.setAdapter(adapter);
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        if (adapter!=null){
+//            adapter.startListening();
+//        }
+//    }
+//
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        if (adapter!=null){
+//            adapter.stopListening();
+//        }
+//    }
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
     @Override
     public void onResume() {
         super.onResume();

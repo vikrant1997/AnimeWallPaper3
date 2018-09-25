@@ -3,14 +3,47 @@ package com.test.vikrant.anime.Model;
 import java.io.InputStream;
 
 public class WallpaperItem {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 
     private String imagePath;
     private String imageUrl;
     private String categoryId;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    public String imageUrl;
+    public String categoryId;
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 
     public WallpaperItem(){
 
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
     public WallpaperItem(String imageUrl,String imagePath){
 
         this.imagePath=imagePath;
@@ -42,10 +75,37 @@ public class WallpaperItem {
 //        return categoryId;
 //    }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+    public WallpaperItem(String imageLink, String categoryId) {
+        this.imageUrl = imageLink;
+        this.categoryId = categoryId;
+    }
+
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
     public String getImageUrl() {
         return imageUrl;
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 //    public void setCategoryId(String categoryId) {
 //        this.categoryId = categoryId;
 //    }
@@ -56,5 +116,26 @@ public class WallpaperItem {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    public void setImageUrl(String imageLink) {
+        this.imageUrl = imageLink;
+    }
+
+    public String getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
     }
 }

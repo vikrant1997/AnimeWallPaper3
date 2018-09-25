@@ -76,13 +76,44 @@ dependencies {
     implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
     implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 
+<<<<<<< HEAD
     implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
 
     implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+     implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+=======
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+>>>>>>> PaypalAdded
+=======
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
     debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
 
 }
 configurations.all { resolutionStrategy.force 'android.arch.persistence.room:runtime:1.0.0' }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 apply plugin: 'com.google.gms.google-services'
 repositories {
     mavenCentral()

@@ -17,6 +17,7 @@
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="FasAnime"
@@ -25,10 +26,31 @@
         android:theme="@style/AppTheme.NoActionBar">
         <activity
             android:name=".MainActivity"
+<<<<<<< HEAD
             android:alwaysRetainTaskState="true"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="portrait">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:alwaysRetainTaskState="true">
+=======
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+>>>>>>> PaypalAdded
+=======
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
@@ -38,6 +60,7 @@
         </activity>
         <activity
             android:name=".MainActivity2"
+<<<<<<< HEAD
             android:alwaysRetainTaskState="true"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar">
@@ -46,6 +69,48 @@
             </intent-filter>
         </activity>
         <activity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:alwaysRetainTaskState="true"
+            android:name=".ListWallpaper"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity2">
+
+        </activity>
+        <activity
+            android:alwaysRetainTaskState="true"
+            android:name=".ViewWallpaper"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ListWallpaper" />
+=======
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+=======
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
             android:name=".ListWallpaper"
             android:alwaysRetainTaskState="true"
             android:launchMode="singleTop"
@@ -56,6 +121,13 @@
             android:launchMode="singleTop"
             android:parentActivityName=".ListWallpaper" />
         <activity android:name=".config.PaymentDetails"></activity>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
     </application>
 
 </manifest>

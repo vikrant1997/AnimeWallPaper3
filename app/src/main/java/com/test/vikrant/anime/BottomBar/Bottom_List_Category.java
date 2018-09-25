@@ -142,6 +142,37 @@ public class Bottom_List_Category extends Fragment {
         recyclerView.setAdapter(adapter);
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    @Override
+    public void onStart() {
+        super.onStart();
+        if (adapter!=null){
+            adapter.startListening();
+        }
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (adapter!=null){
+            adapter.stopListening();
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (adapter!=null){
+            adapter.startListening();
+        }
+    }
+=======
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 //    @Override
 //    public void onStart() {
 //        super.onStart();
@@ -165,4 +196,11 @@ public class Bottom_List_Category extends Fragment {
 //            adapter.startListening();
 //        }
 //    }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> PaypalAdded
+=======
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
 }

@@ -9,6 +9,21 @@ public class Common {
     public static String CATEGORY_SELECTED;
     public static final String STR_WALLPAPER="Wallpapers";
     public static String CATEGORY_ID_SELECTED;
+<<<<<<< HEAD
     public static String IMAGE_PATH;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    public static String IMAGE_PATH;
+=======
+>>>>>>> 54d2c575dcc6ea15ca80d5ea23fdb86520b80337
+=======
+    public static String IMAGE_PATH;
+>>>>>>> PaypalAdded
+=======
+    public static String IMAGE_PATH;
+>>>>>>> master
+>>>>>>> 1b937b763d257ba4aa2d72759d3d80897121fe8d
     public static WallpaperItem select_background=new WallpaperItem();
 }
