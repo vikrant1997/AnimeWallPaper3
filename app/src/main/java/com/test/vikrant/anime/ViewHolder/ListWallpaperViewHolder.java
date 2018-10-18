@@ -1,5 +1,6 @@
 package com.test.vikrant.anime.ViewHolder;
 
+<<<<<<< HEAD
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
@@ -32,4 +33,7 @@ public class ListWallpaperViewHolder extends RecyclerView.ViewHolder implements 
     itemClickListener.onclick(v,getAdapterPosition());
     }
 
+=======
+public class ListWallpaperViewHolder {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 }

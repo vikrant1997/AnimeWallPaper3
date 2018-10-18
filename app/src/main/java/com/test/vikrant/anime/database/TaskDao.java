@@ -1,4 +1,5 @@
 package com.test.vikrant.anime.database;
+<<<<<<< HEAD
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
@@ -40,4 +41,8 @@ public interface TaskDao {
 
 
 
+=======
+
+public interface TaskDao {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 }

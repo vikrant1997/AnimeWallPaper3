@@ -1,5 +1,6 @@
 package com.test.vikrant.anime;
 
+<<<<<<< HEAD
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.CoordinatorLayout;
@@ -28,11 +29,18 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
     }
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity2 extends AppCompatActivity {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+<<<<<<< HEAD
         fragment=HomeActivity.getINSTANCE();
         loadFragment(fragment);
         bottomNavigationView=findViewById(R.id.bottomNavigation);
@@ -95,5 +103,7 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
         //transaction.addToBackStack();
         transaction.disallowAddToBackStack();
         transaction.commit();
+=======
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
     }
 }

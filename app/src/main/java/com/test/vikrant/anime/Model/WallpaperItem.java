@@ -1,5 +1,6 @@
 package com.test.vikrant.anime.Model;
 
+<<<<<<< HEAD
 import java.io.InputStream;
 
 public class WallpaperItem {
@@ -57,4 +58,7 @@ public class WallpaperItem {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+=======
+public class WallpaperItem {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 }

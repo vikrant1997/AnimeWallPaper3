@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".config.PaymentDetails">
 
+<<<<<<< HEAD
     <LinearLayout
         android:orientation="vertical"
         android:layout_centerInParent="true"
@@ -34,3 +39,6 @@
     </LinearLayout>
 
 </RelativeLayout>
+=======
+</android.support.constraint.ConstraintLayout>
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b

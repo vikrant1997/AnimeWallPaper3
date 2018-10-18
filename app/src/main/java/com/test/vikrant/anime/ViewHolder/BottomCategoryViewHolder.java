@@ -1,5 +1,6 @@
 package com.test.vikrant.anime.ViewHolder;
 
+<<<<<<< HEAD
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -33,3 +34,7 @@ public class BottomCategoryViewHolder extends RecyclerView.ViewHolder implements
         itemClickListener.onclick(v,getAdapterPosition());
     }
 }
+=======
+public class BottomCategoryViewHolder {
+}
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b

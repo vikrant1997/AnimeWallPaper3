@@ -1,5 +1,6 @@
 package com.test.vikrant.anime;
 
+<<<<<<< HEAD
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -132,4 +133,7 @@ public class DonateActivity extends Fragment {
         }else if (resultCode==PaymentActivity.RESULT_EXTRAS_INVALID)
             Toast.makeText(getActivity(),"Invalid",Toast.LENGTH_SHORT).show();
     }
+=======
+public class DonateActivity {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 }

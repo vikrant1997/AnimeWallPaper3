@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -62,3 +63,10 @@
     </LinearLayout>
 
 </LinearLayout>
+=======
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.constraint.ConstraintLayout>
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b

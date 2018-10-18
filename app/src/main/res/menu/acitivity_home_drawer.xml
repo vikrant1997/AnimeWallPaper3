@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
         <item android:id="@+id/nav_item_one"
@@ -25,3 +26,10 @@
         </menu>
     </item>
 </menu>
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</LinearLayout>
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b

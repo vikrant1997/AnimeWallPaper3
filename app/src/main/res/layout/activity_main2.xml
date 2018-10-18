@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+<<<<<<< HEAD
     tools:openDrawer="start">
 
 <android.support.design.widget.CoordinatorLayout
@@ -52,6 +53,18 @@
 
 </android.support.design.widget.CoordinatorLayout>
 
+=======
+    tools:openDrawer="start"
+    >
+
+    <include
+        layout="@layout/activity_main3"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

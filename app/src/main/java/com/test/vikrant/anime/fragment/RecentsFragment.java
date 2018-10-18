@@ -1,6 +1,7 @@
 package com.test.vikrant.anime.fragment;
 
 
+<<<<<<< HEAD
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.Observer;
 import android.content.Context;
@@ -12,10 +13,15 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+=======
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+<<<<<<< HEAD
 import com.test.vikrant.anime.Adapter.BookMarksAdapter;
 import com.test.vikrant.anime.R;
 import com.test.vikrant.anime.ViewWallpaper;
@@ -39,20 +45,34 @@ public class RecentsFragment extends Fragment implements BookMarksAdapter.ListIt
         super.setRetainInstance(retain);
     }
 
+=======
+import com.test.vikrant.anime.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class RecentsFragment extends Fragment {
+
+
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
     public RecentsFragment() {
         // Required empty public constructor
     }
 
+<<<<<<< HEAD
     public static RecentsFragment getINSTANCE(){
         if(INSTANCE==null)
             INSTANCE=new RecentsFragment();
         return INSTANCE;
     }
+=======
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+<<<<<<< HEAD
         return inflater.inflate(R.layout.fragment_recents, null);
     }
 
@@ -114,4 +134,9 @@ public class RecentsFragment extends Fragment implements BookMarksAdapter.ListIt
         //startActivity(send);
 
     }
+=======
+        return inflater.inflate(R.layout.fragment_recents, container, false);
+    }
+
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 }

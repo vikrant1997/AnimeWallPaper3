@@ -1,5 +1,6 @@
 package com.test.vikrant.anime.ViewHolder;
 
+<<<<<<< HEAD
 import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -33,4 +34,7 @@ public class CategoryViewHolder extends RecyclerView.ViewHolder implements View.
     public void onClick(View v) {
         itemClickListener.onclick(v,getAdapterPosition());
     }
+=======
+public class CategoryViewHolder {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 }

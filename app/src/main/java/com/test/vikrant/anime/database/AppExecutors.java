@@ -1,5 +1,6 @@
 package com.test.vikrant.anime.database;
 
+<<<<<<< HEAD
 import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
@@ -55,3 +56,7 @@ public class AppExecutors {
     }
 }
 
+=======
+public class AppExecutors {
+}
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b

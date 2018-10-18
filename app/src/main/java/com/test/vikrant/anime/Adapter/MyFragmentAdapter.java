@@ -1,5 +1,6 @@
 package com.test.vikrant.anime.Adapter;
 
+<<<<<<< HEAD
 import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -51,3 +52,7 @@ public class MyFragmentAdapter extends FragmentPagerAdapter {
     }
 
 }
+=======
+public class MyFragmentAdapter {
+}
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -8,5 +9,8 @@
         android:title="Text to be seen by user"
         app:showAsAction="always"
         android:orderInCategory="0"/>
+=======
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 
 </menu>

@@ -1,5 +1,6 @@
 package com.test.vikrant.anime;
 
+<<<<<<< HEAD
 import android.app.WallpaperManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -54,10 +55,18 @@ public class ViewWallpaper extends AppCompatActivity {
     Icon heartImage;
     Drawable drawable;
     private Menu testMenu;
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class ViewWallpaper extends AppCompatActivity {
+
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_wallpaper);
+<<<<<<< HEAD
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_view_wallpaper);
         setSupportActionBar(toolbar);
@@ -196,3 +205,7 @@ public void deleteById(final String mImagePath){
 
 }
 
+=======
+    }
+}
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b

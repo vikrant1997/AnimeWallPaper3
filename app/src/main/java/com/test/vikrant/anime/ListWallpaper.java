@@ -1,5 +1,6 @@
 package com.test.vikrant.anime;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentTransaction;
@@ -43,11 +44,18 @@ public class ListWallpaper extends AppCompatActivity{
     FirebaseRecyclerAdapter<WallpaperItem,ListWallpaperViewHolder> adapter;
 
     RecyclerView recyclerView;
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class ListWallpaper extends AppCompatActivity {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_wallpaper);
+<<<<<<< HEAD
 
         Toolbar toolbar=(Toolbar) findViewById(R.id.list_toolbar);
         toolbar.setTitle(Common.CATEGORY_SELECTED);
@@ -139,3 +147,7 @@ public class ListWallpaper extends AppCompatActivity{
 
 
 }
+=======
+    }
+}
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b

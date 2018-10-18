@@ -1,5 +1,6 @@
 package com.test.vikrant.anime.config;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -43,5 +44,16 @@ public class PaymentDetails extends AppCompatActivity {
 
 
 
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class PaymentDetails extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_payment_details);
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
     }
 }

@@ -1,5 +1,6 @@
 package com.test.vikrant.anime.Adapter;
 
+<<<<<<< HEAD
 import android.content.Context;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
@@ -121,4 +122,7 @@ public class BookMarksAdapter extends RecyclerView.Adapter<BookMarksAdapter.Numb
         }
     }
 
+=======
+public class BookMarksAdapter {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 }

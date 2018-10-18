@@ -1,22 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <FrameLayout
+=======
+<android.support.design.widget.CoordinatorLayout
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context="com.test.vikrant.anime.MainActivity2">
 
     <android.support.design.widget.AppBarLayout
 
+=======
+    android:id="@+id/frame_container"
+    tools:context="com.test.vikrant.anime.MainActivity2">
+
+    <android.support.design.widget.AppBarLayout
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
         app:elevation="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
+<<<<<<< HEAD
 
         <android.support.design.widget.TabLayout
             android:theme="@style/AppTheme"
             app:layout_scrollFlags="scroll|enterAlways|snap"
+=======
+        <android.support.v7.widget.Toolbar
+            app:layout_scrollFlags="enterAlways|scroll"
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/AppTheme"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+        <android.support.design.widget.TabLayout
+            android:theme="@style/AppTheme"
+            app:layout_scrollFlags="scroll|enterAlways"
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -24,6 +50,7 @@
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager
+<<<<<<< HEAD
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_marginTop="?android:attr/actionBarSize"
         android:id="@+id/viewPager"
@@ -33,3 +60,30 @@
         />
 
 </FrameLayout>
+=======
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/viewPager"
+        android:layout_below="@id/tabLayout"
+        android:layout_above="@id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_gravity="bottom"
+        android:elevation="4dp"
+        android:id="@+id/bottomNavigation"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@android:color/background_dark"
+        app:itemTextColor="@android:color/background_dark"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_behavior="com.test.vikrant.anime.BottomBar.BottomNavigationBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b

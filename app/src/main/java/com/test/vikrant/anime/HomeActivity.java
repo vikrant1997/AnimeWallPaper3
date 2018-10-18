@@ -1,5 +1,6 @@
 package com.test.vikrant.anime;
 
+<<<<<<< HEAD
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.BottomNavigationView;
@@ -64,4 +65,7 @@ public class HomeActivity extends Fragment {
         return INSTANCE;
     }
 
+=======
+public class HomeActivity {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 }

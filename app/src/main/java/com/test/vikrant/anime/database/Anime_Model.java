@@ -1,5 +1,6 @@
 package com.test.vikrant.anime.database;
 
+<<<<<<< HEAD
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
@@ -37,4 +38,7 @@ public class Anime_Model {
 
     public String getmImageId(){return mImageId; }
 
+=======
+public class Anime_Model {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
 }

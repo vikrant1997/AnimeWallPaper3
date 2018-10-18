@@ -16,7 +16,10 @@
             android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+<<<<<<< HEAD
 
+=======
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
             />
         <TextView
             android:id="@+id/name"
@@ -26,9 +29,13 @@
             android:layout_alignParentBottom="true"
             android:text="Category name"
             android:textSize="15sp"
+<<<<<<< HEAD
             android:textColor="#FFF"
             android:background="#30000000"
 
+=======
+            android:textColor="@android:color/white"
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
             />
 
     </RelativeLayout>

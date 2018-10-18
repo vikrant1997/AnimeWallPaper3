@@ -15,7 +15,11 @@
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
           "client_id": "707994435717-qk6e90vm7uj3joh0vjtamodejhringq7.apps.googleusercontent.com",
+=======
+          "client_id": "707994435717-naskkgpnk9f985h6k4jugb9u9spr19pr.apps.googleusercontent.com",
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
           "client_type": 1,
           "android_info": {
             "package_name": "com.test.vikrant.anime",
@@ -23,13 +27,21 @@
           }
         },
         {
+<<<<<<< HEAD
           "client_id": "707994435717-kdv0dtuohomkq4mefoboljrcp0njr63k.apps.googleusercontent.com",
+=======
+          "client_id": "707994435717-0gcfa9p6dneebngpscrnulvfk5t49397.apps.googleusercontent.com",
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
           "client_type": 3
         }
       ],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyCjKk_vClF2vuZlemtsqaC4vATzmDXwWoE"
+=======
+          "current_key": "AIzaSyDS_pQpYGPQCJjFUHLExO1VoS93DnmMGx0"
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
         }
       ],
       "services": {
@@ -40,7 +52,11 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
+<<<<<<< HEAD
               "client_id": "707994435717-kdv0dtuohomkq4mefoboljrcp0njr63k.apps.googleusercontent.com",
+=======
+              "client_id": "707994435717-0gcfa9p6dneebngpscrnulvfk5t49397.apps.googleusercontent.com",
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
               "client_type": 3
             }
           ]
