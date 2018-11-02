@@ -1,5 +1,10 @@
 package com.test.vikrant.anime.fragment;
 
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.Observer;
 import android.content.Context;
@@ -11,10 +16,21 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+<<<<<<< HEAD
+=======
+=======
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 import com.test.vikrant.anime.Adapter.BookMarksAdapter;
 import com.test.vikrant.anime.R;
 import com.test.vikrant.anime.ViewWallpaper;
@@ -24,6 +40,10 @@ import com.test.vikrant.anime.database.AppDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 public class RecentsFragment extends Fragment implements BookMarksAdapter.ListItemClickListener{
     private static RecentsFragment INSTANCE=null;
     private RecyclerView mRecyclerView;
@@ -37,20 +57,46 @@ public class RecentsFragment extends Fragment implements BookMarksAdapter.ListIt
         super.setRetainInstance(retain);
     }
 
+<<<<<<< HEAD
+=======
+=======
+import com.test.vikrant.anime.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class RecentsFragment extends Fragment {
+
+
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     public RecentsFragment() {
         // Required empty public constructor
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     public static RecentsFragment getINSTANCE(){
         if(INSTANCE==null)
             INSTANCE=new RecentsFragment();
         return INSTANCE;
     }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         return inflater.inflate(R.layout.fragment_recents, null);
     }
 
@@ -107,10 +153,21 @@ public class RecentsFragment extends Fragment implements BookMarksAdapter.ListIt
         Log.d("Recents imageUri ",obj.getAnimeUri());
         intent.putExtra("imageUri",obj.getAnimeUri());
         intent.putExtra("imageId",obj.getImageId());
+<<<<<<< HEAD
         intent.putExtra("finalPath",obj.getAnimeFinal());
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         startActivity(intent);
 
         //startActivity(send);
 
     }
+<<<<<<< HEAD
+=======
+=======
+        return inflater.inflate(R.layout.fragment_recents, container, false);
+    }
+
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 }

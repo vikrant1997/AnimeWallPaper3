@@ -47,11 +47,19 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:4.1.0'
     implementation 'com.google.firebase:firebase-database:11.8.0'
     implementation 'com.android.support:support-v4:27.1.+'
+<<<<<<< HEAD
 
     testImplementation 'junit:junit:4.12'
 
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+=======
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     implementation 'com.android.support:recyclerview-v7:27.1.+'
 
 
@@ -73,6 +81,7 @@ dependencies {
 
 
     def appCenterSdkVersion = '1.8.0'
+<<<<<<< HEAD
 //    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
 //    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 
@@ -82,6 +91,15 @@ dependencies {
 //    debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
 
     implementation 'com.squareup.picasso:picasso:2.5.2'
+=======
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.4'
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 
 }
 configurations.all { resolutionStrategy.force 'android.arch.persistence.room:runtime:1.0.0' }

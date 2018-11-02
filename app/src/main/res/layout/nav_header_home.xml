@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/nav_header"
     android:layout_width="match_parent"
     android:layout_height="200dp"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_header"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     android:background="@color/colorAccent"
     android:clickable="true"
     android:focusable="true"
@@ -12,6 +19,7 @@
     android:padding="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
+<<<<<<< HEAD
     <ImageView
         android:layout_marginTop="10dp"
         android:id="@+id/imageView"
@@ -42,3 +50,6 @@
         />
 
 </RelativeLayout>
+=======
+</LinearLayout>
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e

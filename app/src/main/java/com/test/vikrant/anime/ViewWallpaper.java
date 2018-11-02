@@ -1,5 +1,9 @@
 package com.test.vikrant.anime;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 import android.app.WallpaperManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -9,7 +13,10 @@ import android.graphics.drawable.Icon;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
+<<<<<<< HEAD
 import android.support.v4.widget.CircularProgressDrawable;
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -23,6 +30,7 @@ import android.widget.Toast;
 
 
 import com.bumptech.glide.Glide;
+<<<<<<< HEAD
 import com.bumptech.glide.load.resource.gif.GifDrawable;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
@@ -38,14 +46,24 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.test.vikrant.anime.Common.Common;
 import com.test.vikrant.anime.Model.WallpaperItem;
+=======
+import com.bumptech.glide.request.RequestOptions;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
+import com.github.clans.fab.FloatingActionMenu;
+import com.test.vikrant.anime.Common.Common;
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 import com.test.vikrant.anime.database.Anime_Model;
 import com.test.vikrant.anime.database.AppDatabase;
 import com.test.vikrant.anime.database.AppExecutors;
 
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.HashMap;
 import java.util.Map;
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 
 import static com.google.android.gms.common.internal.safeparcel.SafeParcelable.NULL;
 
@@ -54,6 +72,7 @@ public class ViewWallpaper extends AppCompatActivity {
     private int id;
     private String image_path;
     private String image_uri;
+<<<<<<< HEAD
     private String image_final;
     private boolean flag=false;
     CircularProgressDrawable circle;
@@ -65,21 +84,44 @@ public class ViewWallpaper extends AppCompatActivity {
     FloatingActionMenu mainFloating;
 
 
+=======
+    private boolean flag=false;
+    RequestOptions glideOptions = new RequestOptions()
+            .placeholder(R.drawable.ic_launcher_foreground)
+            .error(R.drawable.ic_launcher_foreground);
+
+    FloatingActionMenu mainFloating;
+
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     com.github.clans.fab.FloatingActionButton wall_set;
     ImageView imageView;
     RelativeLayout rootLayout;
     Icon heartImage;
     Drawable drawable;
     private Menu testMenu;
+<<<<<<< HEAD
+=======
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class ViewWallpaper extends AppCompatActivity {
+
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_wallpaper);
+<<<<<<< HEAD
 
         circle=new CircularProgressDrawable(this);
         circle.setStrokeWidth(5f);
         circle.setCenterRadius(30f);;
         circle.start();
+=======
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_view_wallpaper);
         setSupportActionBar(toolbar);
@@ -87,15 +129,21 @@ public class ViewWallpaper extends AppCompatActivity {
         Intent fetch=getIntent();
         image_path=fetch.getStringExtra("imageId");
         image_uri=fetch.getStringExtra("imageUri");
+<<<<<<< HEAD
         image_final=fetch.getStringExtra("finalPath");
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 //        id=Integer.parseInt(fetch.getStringExtra("id"));
         mDb = AppDatabase.getInstance(getApplicationContext());
 
         //checkHeart(image_path);
+<<<<<<< HEAD
          glideOptions2= new RequestOptions()
                 .placeholder(circle)
                 .error(R.drawable.ic_launcher_foreground);
 
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             //Init
@@ -103,6 +151,7 @@ public class ViewWallpaper extends AppCompatActivity {
             imageView = (ImageView) findViewById(R.id.imageThumb);
             Glide.with(getApplicationContext())
                     //.load(Common.select_background.getImageUrl())
+<<<<<<< HEAD
                     .load(image_final)
                     .apply(glideOptions2)
                     .into(imageView);
@@ -110,6 +159,11 @@ public class ViewWallpaper extends AppCompatActivity {
 
 
 
+=======
+                    .load(image_uri)
+                    .into(imageView);
+            Log.d("ViewWallpaper imageUri ",image_uri);
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
             mainFloating = (FloatingActionMenu) findViewById(R.id.fab);
             wall_set = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.fab_wall);
 
@@ -119,7 +173,11 @@ public class ViewWallpaper extends AppCompatActivity {
 
                     Glide.with(getApplicationContext())
                             //.load(Common.select_background.getImageUrl())
+<<<<<<< HEAD
                             .load(image_final)
+=======
+                            .load(image_uri)
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
                             .apply(glideOptions)
                             .into(new SimpleTarget<Drawable>() {
 
@@ -140,6 +198,10 @@ public class ViewWallpaper extends AppCompatActivity {
                 }
             });
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -161,7 +223,11 @@ public class ViewWallpaper extends AppCompatActivity {
             case R.id.heart_fav:
 
                 if(flag==false){
+<<<<<<< HEAD
                     Anime_Model taskEntry = new Anime_Model(image_uri, image_path,image_final);
+=======
+                    Anime_Model taskEntry = new Anime_Model(image_uri, image_path);
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
                     insertItem(taskEntry);
                     flag=true;
                 }
@@ -195,6 +261,7 @@ public class ViewWallpaper extends AppCompatActivity {
             @Override
             public void run() {
                 mDb.taskDao().insertTask(taskAnime);
+<<<<<<< HEAD
 
                 Intent fetch=getIntent();
                 String strdata = fetch.getExtras().getString("Uniqid");
@@ -203,12 +270,15 @@ public class ViewWallpaper extends AppCompatActivity {
                     insertViewCount();
                 }
                 //insertViewCount();
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
                 //Toast.makeText(getApplicationContext(),"item inserted ",Toast.LENGTH_SHORT).show();
             }
 
         });
     }
 
+<<<<<<< HEAD
     private void insertViewCount() {
         FirebaseDatabase.getInstance()
                 .getReference("Popular")
@@ -271,6 +341,8 @@ public class ViewWallpaper extends AppCompatActivity {
         ;
     }
 
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     public void checkHeart(final String image_path){
         AppExecutors.getInstance().diskIO().execute(new Runnable() {
             @Override
@@ -296,3 +368,10 @@ public void deleteById(final String mImagePath){
 
 }
 
+<<<<<<< HEAD
+=======
+=======
+    }
+}
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e

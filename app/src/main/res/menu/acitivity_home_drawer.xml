@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:id="@+id/group1">
         <item
@@ -24,3 +25,39 @@
                 android:title="Rate App" />
     </group>
 </menu>
+=======
+<<<<<<< HEAD
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_item_one"
+            android:title="Item 1" />
+        <item android:id="@+id/nav_item_two"
+            android:title="Item 2" />
+        <item android:id="@+id/nav_item_three"
+            android:title="Item 3" />
+    </group>
+
+    <group android:id="@+id/group_menu">
+        <item android:id="@+id/nav_item_four"
+            android:title="Item 4" />
+        <item android:id="@+id/nav_item_five"
+            android:title="Item 5" />
+    </group>
+
+    <item android:title="Title 1">
+        <menu>
+            <item android:id="@+id/nav_item_six"
+                android:title="Item 6" />
+            <item android:id="@+id/nav_item_seven"
+                android:title="Item 7" />
+        </menu>
+    </item>
+</menu>
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</LinearLayout>
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e

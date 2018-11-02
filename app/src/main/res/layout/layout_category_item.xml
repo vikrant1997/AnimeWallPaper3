@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     android:layout_width="match_parent"
+=======
+    android:layout_width="wrap_content"
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     android:layout_height="200dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="10dp"
@@ -16,7 +20,14 @@
             android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
             />
         <TextView
             android:id="@+id/name"
@@ -26,9 +37,19 @@
             android:layout_alignParentBottom="true"
             android:text="Category name"
             android:textSize="15sp"
+<<<<<<< HEAD
             android:textColor="#FFF"
             android:background="#30000000"
 
+=======
+<<<<<<< HEAD
+            android:textColor="#FFF"
+            android:background="#30000000"
+
+=======
+            android:textColor="@android:color/white"
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
             />
 
     </RelativeLayout>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     <item
         android:id="@+id/action_home"
         android:icon="@drawable/ic_home_black_24dp"
@@ -21,4 +25,9 @@
 
     </item>
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 </menu>

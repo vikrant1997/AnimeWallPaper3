@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 package com.test.vikrant.anime.BottomBar;
+=======
+<<<<<<< HEAD
+package com.test.vikrant.anime.BottomBar;
+=======
+package com.test.vikrant.anime;
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -13,8 +21,16 @@ public final class BottomNavigationBehavior extends CoordinatorLayout.Behavior<B
         super(context, attrs);
     }
 
+<<<<<<< HEAD
    
 
+=======
+<<<<<<< HEAD
+   
+
+=======
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     public boolean onStartNestedScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull BottomNavigationView child, @NonNull View directTargetChild, @NonNull View target, int axes, int type) {
         return axes == ViewCompat.SCROLL_AXIS_VERTICAL;
     }

@@ -14,6 +14,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+<<<<<<< HEAD
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
@@ -28,8 +29,26 @@
 
         <item name="windowNoTitle">true</item>
 
+=======
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <!--<item name="textColor">@color/background_dark</item>-->
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     </style>
+    
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="actionBarStyle">@style/FullScreenTheme</item>
+        <item name="windowActionBarOverlay">true</item>
 
+<<<<<<< HEAD
 
+=======
+        <item name="windowNoTitle">true</item>
+
+    </style>
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     
 </resources>
