@@ -1,5 +1,9 @@
 package com.test.vikrant.anime;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.BottomNavigationView;
@@ -43,16 +47,29 @@ public class HomeActivity extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+<<<<<<< HEAD
         // Inflate the layout for this fragment
          view = inflater.inflate(R.layout.content_home, container, false);
         adapter = new MyFragmentAdapter(getChildFragmentManager(),getContext());
         viewPager = view.findViewById(R.id.viewPager);
+=======
+        Log.d("Test1","hello");
+        // Inflate the layout for this fragment
+         view = inflater.inflate(R.layout.content_home, container, false);
+
+        adapter = new MyFragmentAdapter(getChildFragmentManager(),getContext());
+        viewPager = view.findViewById(R.id.viewPager);
+
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         viewPager.setAdapter(adapter);
         tabLayout = view.findViewById(R.id.tabLayout);
 
         tabLayout.setupWithViewPager(viewPager);
         viewPager.setOffscreenPageLimit(3);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         return view;
     }
 
@@ -62,4 +79,10 @@ public class HomeActivity extends Fragment {
         return INSTANCE;
     }
 
+<<<<<<< HEAD
+=======
+=======
+public class HomeActivity {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 }

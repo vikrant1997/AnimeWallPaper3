@@ -1,5 +1,9 @@
 package com.test.vikrant.anime.database;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
@@ -19,6 +23,7 @@ public class Anime_Model {
 
     @ColumnInfo(name="URL")
     private String mAnimeUri;
+<<<<<<< HEAD
 
     @ColumnInfo(name="IMAGE_FINAL")
     private String mAnimeFinal;
@@ -30,6 +35,14 @@ public class Anime_Model {
         this.mAnimeUri=mAnimeUri;
         this.mImageId=mImageId;
         this.mAnimeFinal=mAnimeFinal;
+=======
+    @NonNull@ColumnInfo(name="IMAGEID")@PrimaryKey
+    private String mImageId;
+
+    public Anime_Model(String mAnimeUri,String mImageId){
+        this.mAnimeUri=mAnimeUri;
+        this.mImageId=mImageId;
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     }
 
     public String getImageId() {
@@ -40,6 +53,7 @@ public class Anime_Model {
         return mAnimeUri;
     }
 
+<<<<<<< HEAD
 
     public String getAnimeFinal() {
         return mAnimeFinal;
@@ -58,4 +72,11 @@ public class Anime_Model {
     }
     // public String getmImageId(){return mImageId; }
 
+=======
+    public String getmImageId(){return mImageId; }
+
+=======
+public class Anime_Model {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 }

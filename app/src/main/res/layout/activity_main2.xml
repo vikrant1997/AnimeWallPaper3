@@ -6,6 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     tools:openDrawer="start">
 
 <android.support.design.widget.CoordinatorLayout
@@ -28,6 +32,10 @@
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:theme="@style/AppTheme" />
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     </android.support.design.widget.AppBarLayout>
 
     <FrameLayout
@@ -51,14 +59,32 @@
 
 </android.support.design.widget.CoordinatorLayout>
 
+<<<<<<< HEAD
+=======
+=======
+    tools:openDrawer="start"
+    >
+
+    <include
+        layout="@layout/activity_main3"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+<<<<<<< HEAD
         app:itemIconTint="@android:color/black"
         android:textStyle="bold"
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         app:headerLayout="@layout/nav_header_home"
         app:menu="@menu/acitivity_home_drawer"/>
 

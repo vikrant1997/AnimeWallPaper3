@@ -1,8 +1,13 @@
 package com.test.vikrant.anime.BottomBar;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
+=======
+<<<<<<< HEAD
+import android.content.Intent;
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -63,7 +68,42 @@ public class Bottom_List_Category extends Fragment {
             @Override
             protected void onBindViewHolder(@NonNull final BottomCategoryViewHolder holder
                     , int position, @NonNull final CategoryItem model) {
+<<<<<<< HEAD
 
+=======
+//                Picasso.get()
+//                        .load(model.getImageLink())
+//                        .networkPolicy(NetworkPolicy.OFFLINE)
+//                        .into(holder.background_image, new Callback() {
+//                            @Override
+//                            public void onSuccess() {
+//
+//                            }
+//
+//                            @Override
+//                            public void onError(Exception e) {
+//                                Picasso.get()
+//                                        .load(model.getImageLink())
+//                                        .error(R.drawable.ic_launcher_foreground)
+//                                        .into(holder.background_image, new Callback() {
+//                                            @Override
+//                                            public void onSuccess() {
+//
+//                                            }
+//
+//                                            @Override
+//                                            public void onError(Exception e) {
+//                                                Log.e("ERROR_ANIME","Couldn't fetch image");
+//                                            }
+//                                        });
+//                            }
+//                        });
+
+//                Glide.with(getActivity())
+//                        .load(model.getImageLink())
+//                        .apply(glideOptions)
+//                        .into(holder.background_image);
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
                 holder.category_id.setText(position+1+".");
                 holder.category_name.setText(model.getName());
 
@@ -93,7 +133,10 @@ public class Bottom_List_Category extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         setRetainInstance(true);
+<<<<<<< HEAD
         setHasOptionsMenu(false);
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         super.onCreate(savedInstanceState);
     }
 
@@ -101,12 +144,18 @@ public class Bottom_List_Category extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+<<<<<<< HEAD
         setHasOptionsMenu(false);
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         View view = inflater.inflate(R.layout.content_bottom_category, container, false);
         recyclerView = view.findViewById(R.id.recycler_bottom_category);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 1);
         recyclerView.setLayoutManager(gridLayoutManager);
+<<<<<<< HEAD
         whiteNotificationBar(recyclerView);
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         setCategory();
         return view;
     }
@@ -115,6 +164,7 @@ public class Bottom_List_Category extends Fragment {
         adapter.startListening();
         recyclerView.setAdapter(adapter);
     }
+<<<<<<< HEAD
     private void whiteNotificationBar(View view) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             int flags = view.getSystemUiVisibility();
@@ -125,3 +175,34 @@ public class Bottom_List_Category extends Fragment {
     }
 
 }
+=======
+
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        if (adapter!=null){
+//            adapter.startListening();
+//        }
+//    }
+//
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        if (adapter!=null){
+//            adapter.stopListening();
+//        }
+//    }
+//
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+//        if (adapter!=null){
+//            adapter.startListening();
+//        }
+//    }
+}
+=======
+public class Bottom_List_Category {
+}
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e

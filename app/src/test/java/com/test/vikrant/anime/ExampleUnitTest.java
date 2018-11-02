@@ -1,4 +1,12 @@
+<<<<<<< HEAD:app/src/test/java/com/test/vikrant/anime/ExampleUnitTest.java
 package com.test.vikrant.anime;
+=======
+<<<<<<< HEAD:app/src/test/java/com/test/vikrant/anime/ExampleUnitTest.java
+package com.test.vikrant.anime;
+=======
+package com.singh.vikrant.photos;
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b:app/src/test/java/com/test/vikrant/anime/ExampleUnitTest.java
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e:app/src/test/java/com/test/vikrant/anime/ExampleUnitTest.java
 
 import org.junit.Test;
 

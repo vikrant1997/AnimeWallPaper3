@@ -20,8 +20,14 @@
         android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:allowBackup="true"
+<<<<<<< HEAD
         android:icon="@mipmap/ic_goku_1"
         android:label="FasAnime"
+=======
+        android:icon="@mipmap/ic_launcher"
+        android:label="FasAnime"
+        android:roundIcon="@mipmap/ic_launcher_round"
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
@@ -30,7 +36,10 @@
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTop"
             android:screenOrientation="portrait">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
@@ -39,7 +48,10 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
 
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
             android:name=".MainActivity2"
             android:alwaysRetainTaskState="true"
             android:launchMode="singleTop"
@@ -48,9 +60,12 @@
                 <action android:name="android.intent.action.SEARCH" />
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
+<<<<<<< HEAD
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         </activity>
         <activity
             android:name=".ListWallpaper"

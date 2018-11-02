@@ -1,5 +1,6 @@
 package com.test.vikrant.anime;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -9,10 +10,20 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
+=======
+<<<<<<< HEAD
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -23,6 +34,15 @@ import android.view.View;
 import com.test.vikrant.anime.BottomBar.Bottom_List_Category;
 import com.test.vikrant.anime.fragment.TrendingFragment;
 import com.test.vikrant.anime.fragment.FavoriteFragment;
+=======
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.test.vikrant.anime.BottomBar.BottomNavigationBehavior;
+import com.test.vikrant.anime.BottomBar.Bottom_List_Category;
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 
 public class MainActivity2 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -30,24 +50,45 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
     private Toolbar mainToolbar;
     private Toolbar toolbar;
     private Fragment fragment=null;
+<<<<<<< HEAD
     private SearchView searchView;
     private DrawerLayout drawer;
+=======
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return false;
+    }
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity2 extends AppCompatActivity {
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
 
         setContentView(R.layout.activity_main2);
+=======
+        setContentView(R.layout.activity_main2);
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         fragment=HomeActivity.getINSTANCE();
         loadFragment(fragment);
         bottomNavigationView=findViewById(R.id.bottomNavigation);
         toolbar=(Toolbar)findViewById(R.id.main_toolbar);
         toolbar.setTitle("FasAnime");
 
+<<<<<<< HEAD
         setSupportActionBar(toolbar);
 
         // toolbar fancy stuff
 
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
         DrawerLayout drawer =(DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer,toolbar
                 ,R.string.OpenNavigation, R.string.CloseNavigationBar);
@@ -56,7 +97,10 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
         toggle.syncState();
         NavigationView navigationView =(NavigationView)findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+<<<<<<< HEAD
         bottomNavigationView.getMenu().removeItem(R.menu.menu_main);
+=======
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new
         BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -90,6 +134,7 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
 
     @Override
     public void onBackPressed() {
+<<<<<<< HEAD
         int count = getFragmentManager().getBackStackEntryCount();
 
         if (count == 0) {
@@ -136,6 +181,16 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
     }
 
 
+=======
+        super.onBackPressed();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return super.onOptionsItemSelected(item);
+    }
+
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     private void loadFragment(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
@@ -143,6 +198,7 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
         //transaction.addToBackStack();
         transaction.disallowAddToBackStack();
         transaction.commit();
+<<<<<<< HEAD
         if(drawer!=null)
         drawer.closeDrawers();
     }
@@ -169,4 +225,9 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
 //    }
 
 
+=======
+=======
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+    }
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 }

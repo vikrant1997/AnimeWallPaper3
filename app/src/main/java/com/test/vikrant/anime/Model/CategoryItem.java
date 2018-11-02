@@ -1,6 +1,10 @@
 package com.test.vikrant.anime.Model;
 
 public class CategoryItem {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
     public String name;
     public String imageLink;
 
@@ -30,4 +34,9 @@ public class CategoryItem {
     public void setImageLink(String imageLink) {
         this.imageLink = imageLink;
     }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e98aa7a509bf4e3795c36120bc8d906927bd9c8b
+>>>>>>> 440d6108ba6582afc33f33de7d4fe2570549dd0e
 }
