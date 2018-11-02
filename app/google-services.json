@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "707994435717",
+    "firebase_url": "https://animewallpaper-81160.firebaseio.com",
+    "project_id": "animewallpaper-81160",
+    "storage_bucket": "animewallpaper-81160.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707994435717:android:ac29c1a2ce35dd4a",
+        "android_client_info": {
+          "package_name": "com.test.vikrant.anime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707994435717-qk6e90vm7uj3joh0vjtamodejhringq7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.test.vikrant.anime",
+            "certificate_hash": "5753d753a786c2ba791b0b514d2343f07003425a"
+          }
+        },
+        {
+          "client_id": "707994435717-kdv0dtuohomkq4mefoboljrcp0njr63k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjKk_vClF2vuZlemtsqaC4vATzmDXwWoE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707994435717-kdv0dtuohomkq4mefoboljrcp0njr63k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
